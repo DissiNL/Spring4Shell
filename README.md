@@ -1,19 +1,28 @@
 # Example of shell exploit
 
-Build java:
+1) Build java:
 `mvn package`
-Build container:
+
+
+2) Build container:
 `docker build -t tomcat-example .`
 
 
-Run:
+3) Run:
 `docker run -d -p 8080:8080 tomcat-example`
 
 
-Run python attack:
+4) Run python attack:
 
 `python exploit.py`
 
 
-Shell should be at:
+### Done!
+
+Shell should be available at:
 `http://localhost:8080/shell.jsp?cmd=id`
+
+
+### Run with workaround:
+
+`docker run -e "SPRING_PROFILES_ACTIVE=fix" -d -p 8080:8080 tomcat-example`
