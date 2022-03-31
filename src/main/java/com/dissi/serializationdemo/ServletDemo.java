@@ -18,7 +18,7 @@ public class ServletDemo extends SpringBootServletInitializer {
     }
 
     @RequestMapping("/exploit")
-    public String vulnerable(Payload model) {
+    public String vulnerable(Message model) {
         log.info(String.format("Got model: %s", model));
         return model.toString();
     }

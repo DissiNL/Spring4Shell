@@ -1,6 +1,6 @@
 package com.dissi.serializationdemo;
 
-public class Payload {
+public class Message {
     private String message;
 
     public String toString() {
