@@ -1,20 +1,29 @@
 # Example of shell exploit
 
 1) Build java:
-`mvn package`
+```cmd
+mvn package
+```
 
 
-2) Build container:
-`docker build -t tomcat-example .`
+2) Build container
+
+```cmd
+docker build -t tomcat-example .
+```
 
 
 3) Run:
-`docker run -d -p 8080:8080 tomcat-example`
+```cmd
+docker run -d -p 8080:8080 tomcat-example
+```
 
 
 4) Run python attack:
 
-`python exploit.py`
+```cmd
+python exploit.py
+```
 
 
 ### Done!
@@ -27,4 +36,9 @@ Shell should be available at:
 
 Enables the controller advice specified in [BinderControllerAdvice](src/main/java/com/dissi/serializationdemo/BinderControllerAdvice.java)
 
-`docker run -e "SPRING_PROFILES_ACTIVE=fix" -d -p 8080:8080 tomcat-example`
+```cmd
+docker run -e "SPRING_PROFILES_ACTIVE=fix" -d -p 8080:8080 tomcat-example`
+```
+
+If you now run the exploit `python exploit.py` it will not create the file shell.js.  
+Please beware that this is not a complete workaround until the actual issue is fixed.
