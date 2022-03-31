@@ -23,6 +23,8 @@ Shell should be available at:
 `http://localhost:8080/shell.jsp?cmd=id`
 
 
-### Run with workaround:
+### Run with workaround
+
+Enables the controller advice specified in [BinderControllerAdvice](src/com/dissi/serializationdemo/BinderControllerAdvice.java)
 
 `docker run -e "SPRING_PROFILES_ACTIVE=fix" -d -p 8080:8080 tomcat-example`
