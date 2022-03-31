@@ -16,6 +16,8 @@
     <description>SerializationDemo</description>
     <properties>
         <java.version>11</java.version>
+        <!-- Uncomment line to show fix as defined by the early release https://spring.io/blog/2022/03/31/spring-framework-rce-early-announcement -->
+        <!-- <spring-framework.version>5.3.18</spring-framework.version> -->
     </properties>
     <dependencies>
         <dependency>
