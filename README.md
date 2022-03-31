@@ -25,6 +25,6 @@ Shell should be available at:
 
 ### Run with workaround
 
-Enables the controller advice specified in [BinderControllerAdvice](src/com/dissi/serializationdemo/BinderControllerAdvice.java)
+Enables the controller advice specified in [BinderControllerAdvice](src/main/java/com/dissi/serializationdemo/BinderControllerAdvice.java)
 
 `docker run -e "SPRING_PROFILES_ACTIVE=fix" -d -p 8080:8080 tomcat-example`
