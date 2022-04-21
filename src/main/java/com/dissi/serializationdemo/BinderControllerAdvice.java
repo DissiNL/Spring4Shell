@@ -14,9 +14,9 @@ public class BinderControllerAdvice {
 
     @InitBinder
     public void setAllowedFields(WebDataBinder dataBinder) {
-        String[] denylist = new String[]{"class.*", "Class.*", "*.class.*", "*.Class.*"};
+        String[] denyList = new String[]{"class.*", "Class.*", "*.class.*", "*.Class.*"};
 
-        dataBinder.setDisallowedFields(denylist);
+        dataBinder.setDisallowedFields(denyList);
     }
 
 }
